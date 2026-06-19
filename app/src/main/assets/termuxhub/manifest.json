@@ -1,0 +1,22 @@
+{
+  "name": "TermuxHub",
+  "short_name": "TermuxHub",
+  "start_url": "index.html",
+  "theme_color": "#0B1020",
+  "background_color": "#0B1020",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "description": "Companion handbook and AI explainer directory for Android terminals and Linux basics.",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

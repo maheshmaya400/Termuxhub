@@ -1,0 +1,6 @@
+{
+  "name": "TermuxHub",
+  "description": "Educational companion handbook and search-grounded AI assistant for Termux, Linux CLI and safe security administration basics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

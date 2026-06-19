@@ -1,0 +1,109 @@
+<div class="screen" id="view-tool">
+    <!-- Header Back Navigation bar -->
+    <div class="back-navigation">
+        <button class="btn-back testTag_tool_back_button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </button>
+        <span class="nav-title" id="tool-view-title">Command Tool</span>
+    </div>
+    
+    <div class="screen-scroller">
+        <!-- Category Pill Badge -->
+        <div class="tool-detail-badge" id="tool-view-category-badge">🚀 Getting Started</div>
+        
+        <!-- Heading -->
+        <h2 class="tool-detail-name" id="tool-view-name">Update Packages</h2>
+        
+        <!-- Description -->
+        <p class="tool-detail-desc" id="tool-view-desc">
+            Standard command to update the local packages index repository structures.
+        </p>
+
+        <!-- Command Terminal Box (Visually gorgeous dark card) -->
+        <div class="copiable-section" id="tool-command-card-wrapper">
+            <span class="copiable-label">Utility syntax</span>
+            <div class="terminal-box">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-snippet">
+                    <span class="terminal-indicator">$</span>
+                    <code class="terminal-command" id="tool-view-command">pkg update && pkg upgrade -y</code>
+                </div>
+                <button class="btn-copy testTag_copy_command_button" id="btn-copy-command">
+                    <!-- Copy Icon SVG -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    Copy syntax
+                </button>
+            </div>
+        </div>
+
+        <!-- Warning banner (for GitHub security or tools risk) -->
+        <div id="tool-warning-banner" class="warning-banner hidden" style="margin-top: 16px; margin-bottom: 24px;">
+            <span class="warning-icon">🛡️</span>
+            <div class="warning-text" id="tool-warning-text">
+                Be sure to audit the code inside remote repositories before building code scripts.
+            </div>
+        </div>
+
+        <!-- Extra guidance instructions (How To Use or How To Play) -->
+        <div class="info-section hidden" id="tool-extra-guidance-card">
+            <h4 class="info-title" id="tool-guidance-title">How To Run</h4>
+            <div class="info-content" id="tool-guidance-content">
+                Detailed parameters overview.
+            </div>
+        </div>
+
+        <!-- Tool interactions toolbar (Bookmarks, etc.) -->
+        <div class="tool-actions-toolbar">
+            <button class="btn-favorite-action testTag_favorite_toggle_button" id="btn-favorite-toggle">
+                <!-- Heart Icon SVG -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span id="btn-favorite-label">Add to Favorites</span>
+            </button>
+        </div>
+
+        <!-- -------------------------------------
+         * INTELLIGENT GEMINI INTERACTION PANEL
+         * ------------------------------------- -->
+        <div class="ai-explainer-section">
+            <div class="ai-header-bar">
+                <h4 class="ai-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    Gemini Explainer
+                </h4>
+                <span class="ai-badge">Flash 3.5 AI</span>
+            </div>
+            <p class="ai-description">
+                Ask Gemini to explain this command, provide alternative flags, or suggest a standard custom bash pipeline.
+            </p>
+            <div class="ai-prompt-box">
+                <input type="text" id="ai-custom-prompt-input" class="ai-input testTag_ai_custom_input" placeholder="e.g. Explain this command line-by-line...">
+                <button class="btn-ai-send testTag_ai_ask_button" id="btn-ask-ai">Ask</button>
+            </div>
+            
+            <!-- Gemini Response viewport -->
+            <div class="ai-response-box" id="ai-response-viewport">
+                <div class="ai-response-text" id="ai-response-text-container">
+                    Waiting for input coordinates...
+                </div>
+            </div>
+        </div>
+
+        <div class="brand-footer" style="text-align: center; margin-top: 40px;">
+            Built with ❤️ by Maya
+        </div>
+    </div>
+</div>

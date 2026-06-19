@@ -1,0 +1,70 @@
+[
+  {
+    "id": "getting_started",
+    "name": "Getting Started",
+    "icon": "🚀",
+    "description": "Essential initial setup, package updates, and environment configuration."
+  },
+  {
+    "id": "essential_packages",
+    "name": "Essential Packages",
+    "icon": "📦",
+    "description": "Must-have development tools, languages, and core utilities."
+  },
+  {
+    "id": "linux_basics",
+    "name": "Linux Basics",
+    "icon": "🐧",
+    "description": "Practical commands for navigating files, resource usage, and basic system utilities."
+  },
+  {
+    "id": "python_tools",
+    "name": "Python Tools",
+    "icon": "🐍",
+    "description": "Pip packages and developer APIs commonly used within the terminal."
+  },
+  {
+    "id": "github_repositories",
+    "name": "GitHub Repository Tools",
+    "icon": "🛠️",
+    "description": "Official code repositories and recommended standard custom configurations."
+  },
+  {
+    "id": "networking_tools",
+    "name": "Networking Tools",
+    "icon": "🌐",
+    "description": "Standard diagnostic commands for network testing and administration.",
+    "warning": "Use only on systems and networks you own or have permission to test."
+  },
+  {
+    "id": "osint_learning",
+    "name": "OSINT Learning",
+    "icon": "🔎",
+    "description": "Educational techniques for open source public research and data aggregation."
+  },
+  {
+    "id": "info_gathering",
+    "name": "Information Gathering",
+    "icon": "📚",
+    "description": "Querying domain registries, WHOIS data, and standard DNS lookups."
+  },
+  {
+    "id": "web_security",
+    "name": "Web Security Learning",
+    "icon": "🛡️",
+    "description": "Concepts for analyzing web headers, testing responses, and secure design patterns.",
+    "warning": "Educational labs and authorized systems only."
+  },
+  {
+    "id": "fun_games",
+    "name": "Fun Terminal Games",
+    "icon": "🎮",
+    "description": "Interactive classical games directly playable inside your standard shell."
+  },
+  {
+    "id": "troubleshooting",
+    "name": "Troubleshooting",
+    "icon": "❓",
+    "description": "Core checks for environment variables, installed versions, and system errors."
+  }
+]

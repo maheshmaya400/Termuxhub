@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>TermuxHub</title>
+    <!-- Web Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0B1020">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    
+    <!-- Core Styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Global CSS Fonts (with local fallbacks inside CSS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Firebase Compat SDKs (Official, fully modular & robust for Web and WebView platforms) -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+</head>
+<body>
+    <!-- App Mounting Container -->
+    <div id="app-container">
+        <!-- Default Loading Frame (Eliminates white flashes) -->
+        <div class="initial-loader">
+            <div class="spinner"></div>
+            <p class="loader-logo">TermuxHub</p>
+        </div>
+    </div>
+
+    <!-- Modals Host -->
+    <div id="modal-container"></div>
+
+    <!-- Toast Alerts -->
+    <div id="toast-container"></div>
+
+    <!-- Firebase System Modules -->
+    <script src="firebase/firebase-config.js"></script>
+    <script src="firebase/auth.js"></script>
+    <script src="firebase/firestore.js"></script>
+
+    <!-- UI Component Layouts -->
+    <script src="components/button.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/searchbar.js"></script>
+    <script src="components/categoryCard.js"></script>
+    <script src="components/toolCard.js"></script>
+    <script src="components/modal.js"></script>
+
+    <!-- Central Routing Engine -->
+    <script src="script.js"></script>
+</body>
+</html>

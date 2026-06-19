@@ -1,0 +1,88 @@
+<div class="screen" id="view-settings">
+    <div class="screen-header">
+        <div class="header-meta">
+            <span class="header-label">Configurations</span>
+            <h2 class="header-heading">Settings</h2>
+        </div>
+    </div>
+    
+    <div class="screen-scroller">
+        <!-- User Profile Card container -->
+        <div class="profile-card" id="user-profile-widget">
+            <div class="profile-fallback" id="profile-pic-container">U</div>
+            <div class="profile-details">
+                <span class="profile-name" id="profile-name-label">Guest Navigator</span>
+                <span class="profile-email" id="profile-email-label">Offline sandbox session</span>
+            </div>
+        </div>
+        
+        <span class="settings-group-title">Preferences</span>
+        <div class="settings-group">
+            <!-- Dark Theme configuration (Locked to dark by default, customizable) -->
+            <div class="settings-row">
+                <div class="settings-info">
+                    <span class="settings-label">Dark Mode First</span>
+                    <span class="settings-desc">Keep terminal interface and cards optimized for low-light.</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="cfg-darkmode" checked disabled>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <!-- Safe Environment Notifications toggle -->
+            <div class="settings-row">
+                <div class="settings-info">
+                    <span class="settings-label">Security Alerts</span>
+                    <span class="settings-desc">Notify before viewing potentially high-risk network tools.</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="cfg-notifications" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <!-- Intelligent Google Search Grounding toggle -->
+            <div class="settings-row">
+                <div class="settings-info">
+                    <span class="settings-label">Google Search Grounding</span>
+                    <span class="settings-desc">Let Gemini explore real-time search results before explaining.</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="cfg-grounding" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <span class="settings-group-title">Storage Synchronization</span>
+        <div class="settings-group">
+            <div class="settings-row" id="row-sync-status" style="cursor: default;">
+                <div class="settings-info">
+                    <span class="settings-label">Sync status</span>
+                    <span class="settings-desc" id="sync-status-text">Using local sandbox storage (not synced).</span>
+                </div>
+                <!-- Dynamic status spinner -->
+                <div id="sync-indicator-dot" style="width: 12px; height: 12px; border-radius: 50%; background: #FFB300;"></div>
+            </div>
+            
+            <!-- Clear histories/cache -->
+            <div class="settings-row" id="row-clear-cache">
+                <div class="settings-info">
+                    <span class="settings-label">Clear local cache</span>
+                    <span class="settings-desc">Wipe all cached recently viewed commands history.</span>
+                </div>
+                <span style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">RESET</span>
+            </div>
+        </div>
+        
+        <!-- Authenticated utilities trigger (e.g. Sign out) -->
+        <button id="btn-settings-action" class="btn btn-glass testTag_signout_button" style="color: #FF5F56; border-color: rgba(255, 95, 86, 0.2); margin-top: 24px; font-weight: 800;">
+            Sign Out Session
+        </button>
+        
+        <div class="brand-footer" style="text-align: center; margin-top: 40px;">
+            Built with ❤️ by Maya
+        </div>
+    </div>
+</div>

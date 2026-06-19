@@ -1,0 +1,38 @@
+<div class="screen" id="view-favorites">
+    <div class="screen-header">
+        <div class="header-meta">
+            <span class="header-label">Your Bookmarks</span>
+            <h2 class="header-heading">Favorites</h2>
+        </div>
+        <div class="header-action" title="Clear Favorites" id="btn-clear-favorites">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="screen-scroller">
+        <!-- Local search filter for favorites list -->
+        <div id="favorites-search-container"></div>
+        
+        <!-- Target container list -->
+        <div class="tools-list" id="favorites-list-target"></div>
+        
+        <!-- Elegant SVG-backed Empty State displayed when no tools are bookmarked -->
+        <div class="empty-state hidden" id="favorites-empty-view">
+            <!-- Sleek Vector Cyber Compass outline -->
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); opacity: 0.35;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <p class="empty-text">No bookmarked commands yet. Tap the heart icon in any command detail view to save them here for offline access!</p>
+        </div>
+        
+        <div class="brand-footer" style="text-align: center; margin-top: 40px;">
+            Built with ❤️ by Maya
+        </div>
+    </div>
+</div>

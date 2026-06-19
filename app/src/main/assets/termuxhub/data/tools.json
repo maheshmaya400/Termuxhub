@@ -1,0 +1,459 @@
+[
+  {
+    "id": "update_upgrade",
+    "categoryId": "getting_started",
+    "name": "Update & Upgrade Packages",
+    "command": "pkg update && pkg upgrade -y",
+    "description": "Updates the local package index list and runs upgrades for all currently installed Termux applications and core packages."
+  },
+  {
+    "id": "setup_storage",
+    "categoryId": "getting_started",
+    "name": "Setup Shared Storage Permission",
+    "command": "termux-setup-storage",
+    "description": "Requests Android shared filesystem permission to allow Termux to read and write directly to your phone's interior storage directories (~/storage)."
+  },
+  {
+    "id": "change_repo",
+    "categoryId": "getting_started",
+    "name": "Select Mirror Repositories",
+    "command": "termux-change-repo",
+    "description": "Opens an interactive menu allowing you to choose alternative network mirrors. Highly useful for resolving slow server speeds or build sync failures."
+  },
+  {
+    "id": "root_repo",
+    "categoryId": "getting_started",
+    "name": "Add Root Repository",
+    "command": "pkg install root-repo -y",
+    "description": "Enables the optional root suite repository, providing specialized low-level utilities designed specifically for rooted Android handsets."
+  },
+  {
+    "id": "x11_repo",
+    "categoryId": "getting_started",
+    "name": "Add Graphical X11 Repository",
+    "command": "pkg install x11-repo -y",
+    "description": "Syncs the graphic environment repository containing custom visual interfaces, windows managers, and X11 terminal extensions."
+  },
+  {
+    "id": "git_client",
+    "categoryId": "essential_packages",
+    "name": "Git Version Controller",
+    "command": "pkg install git -y",
+    "description": "Installs the standard Git package to let you clone, push, and manage code repositories directly on your mobile system."
+  },
+  {
+    "id": "python",
+    "categoryId": "essential_packages",
+    "name": "Python 3 Runtime",
+    "command": "pkg install python -y",
+    "description": "Installs the full Python programming language interpreter suite along with the package manager (pip)."
+  },
+  {
+    "id": "nodejs",
+    "categoryId": "essential_packages",
+    "name": "Node.js Engine",
+    "command": "pkg install nodejs -y",
+    "description": "Installs the server-side JavaScript engine runtime along with npm (Node Package Manager) for downloading JS libraries."
+  },
+  {
+    "id": "php",
+    "categoryId": "essential_packages",
+    "name": "PHP Interpreter",
+    "command": "pkg install php -y",
+    "description": "Installs the hypertext processor command-line environment and engine for running local PHP scripts or web servers."
+  },
+  {
+    "id": "curl",
+    "categoryId": "essential_packages",
+    "name": "cURL Utility",
+    "command": "pkg install curl -y",
+    "description": "A terminal core utility to transfer data to and from network servers using HTTP, HTTPS, FTP, and other major protocols."
+  },
+  {
+    "id": "wget",
+    "categoryId": "essential_packages",
+    "name": "Wget Downloader",
+    "command": "pkg install wget -y",
+    "description": "A highly robust command-line background file downloader supporting recursive mirroring, pauses, and proxy systems."
+  },
+  {
+    "id": "nano",
+    "categoryId": "essential_packages",
+    "name": "Nano Terminal Editor",
+    "command": "pkg install nano -y",
+    "description": "A simple, friendly, easy-to-use CLI text editor. Highly recommended for absolute terminal beginners."
+  },
+  {
+    "id": "vim",
+    "categoryId": "essential_packages",
+    "name": "Vim Advanced Editor",
+    "command": "pkg install vim -y",
+    "description": "An optimized, highly keyboard-driven developer text editor loaded with customizable plugins and text buffers."
+  },
+  {
+    "id": "jq",
+    "categoryId": "essential_packages",
+    "name": "JQ JSON Processor",
+    "command": "pkg install jq -y",
+    "description": "A high-performance command line processor used to filter, format, parse, and transform raw JSON datasets dynamically."
+  },
+  {
+    "id": "ffmpeg",
+    "categoryId": "essential_packages",
+    "name": "FFmpeg Transcoder",
+    "command": "pkg install ffmpeg -y",
+    "description": "A powerful multi-media toolkit used to convert, mux, compile, compress, stream, and process raw audio and video streams."
+  },
+  {
+    "id": "tree",
+    "categoryId": "essential_packages",
+    "name": "Tree Directory Lister",
+    "command": "pkg install tree -y",
+    "description": "Lists contents of folders recursively, forming a visually satisfying nesting layout with folder lines in your dashboard."
+  },
+  {
+    "id": "zip_pkg",
+    "categoryId": "essential_packages",
+    "name": "ZIP Compressor",
+    "command": "pkg install zip -y",
+    "description": "The classical ZIP tool executable used to package, compress, and bundle sets of directories into compact portable archives."
+  },
+  {
+    "id": "unzip_pkg",
+    "categoryId": "essential_packages",
+    "name": "ZIP Decompressor",
+    "command": "pkg install unzip -y",
+    "description": "Decompresses standard .zip formats, yielding visual extraction listings of local file components directly."
+  },
+  {
+    "id": "tar_pkg",
+    "categoryId": "essential_packages",
+    "name": "TAR Console Archiver",
+    "command": "pkg install tar -y",
+    "description": "Saves and extracts standard file aggregates in consolidated Unix tape archive (.tar, .tar.gz) packages."
+  },
+  {
+    "id": "openssh",
+    "categoryId": "essential_packages",
+    "name": "OpenSSH Secure Shell",
+    "command": "pkg install openssh -y",
+    "description": "Enables encrypted remote shell control connections, installing ssh client utilities and localized sshd listening daemons."
+  },
+  {
+    "id": "tmux",
+    "categoryId": "essential_packages",
+    "name": "TMUX Terminal Multiplexer",
+    "command": "pkg install tmux -y",
+    "description": "Allows nesting multiple terminal panes and persistent session histories. Sessions remain alive even when App windows close."
+  },
+  {
+    "id": "rsync",
+    "categoryId": "essential_packages",
+    "name": "Rsync Sync Agent",
+    "command": "pkg install rsync -y",
+    "description": "A high-speed incremental file synchronization program, updating and mirroring files over local and remote tunnels."
+  },
+  {
+    "id": "make_pkg",
+    "categoryId": "essential_packages",
+    "name": "GNU Make Compiler Tool",
+    "command": "pkg install make -y",
+    "description": "A software compilation utility that automatically determines which parts of a complex C/C++ script need compiling."
+  },
+  {
+    "id": "clang_pkg",
+    "categoryId": "essential_packages",
+    "name": "Clang Binary Compiler",
+    "command": "pkg install clang -y",
+    "description": "A premium front-end compiler engine designed to build fast native C, C++, and Objective-C binary software programs."
+  },
+  {
+    "id": "htop",
+    "categoryId": "linux_basics",
+    "name": "Htop System Monitor",
+    "command": "pkg install htop -y",
+    "description": "An interactive real-time system process monitoring dashboard showing RAM, cores, processes, and terminal system health."
+  },
+  {
+    "id": "ncdu",
+    "categoryId": "linux_basics",
+    "name": "NCDU Storage Analyzer",
+    "command": "pkg install ncdu -y",
+    "description": "An elegant terminal-based disk storage space analyzer. Visually tracks which nested folders consume memory resources."
+  },
+  {
+    "id": "which_pkg",
+    "categoryId": "linux_basics",
+    "name": "Find Binary Path",
+    "command": "pkg install which -y",
+    "description": "Accepts program commands and prints their precise absolute location in the path folder setup (e.g., /data/data/com.termux/files/usr/bin/python)."
+  },
+  {
+    "id": "man_pkg",
+    "categoryId": "linux_basics",
+    "name": "Manual Help Pages",
+    "command": "pkg install man -y",
+    "description": "Installs helper offline manual libraries and instructions. Call 'man commandname' inside terminals to read instructions."
+  },
+  {
+    "id": "bc_calculator",
+    "categoryId": "linux_basics",
+    "name": "BC Advanced Calculator",
+    "command": "pkg install bc -y",
+    "description": "A standard CLI math language processing system supporting multi-decimal high-precision algebraic calculations."
+  },
+  {
+    "id": "coreutils",
+    "categoryId": "linux_basics",
+    "name": "GNU Core utilities",
+    "command": "pkg install coreutils -y",
+    "description": "Provides standard GNU baseline operations like cp, mv, ls, rm, whoami, pwd, and standard terminal operating utilities."
+  },
+  {
+    "id": "findutils",
+    "categoryId": "linux_basics",
+    "name": "GNU Find utilities",
+    "command": "pkg install findutils -y",
+    "description": "Provides powerful background searching scripts like find, locate, and xargs to query files dynamically based on expressions."
+  },
+  {
+    "id": "diffutils",
+    "categoryId": "linux_basics",
+    "name": "GNU Diff utilities",
+    "command": "pkg install diffutils -y",
+    "description": "Enables clear local file comparison utilities. Includes visual comparative utilities like diff, sdiff, and cmp."
+  },
+  {
+    "id": "pip_upgrade",
+    "categoryId": "python_tools",
+    "name": "Upgrade Pip Manager",
+    "command": "pip install --upgrade pip",
+    "description": "Fetches and replaces the standard Python installer system with its absolute latest online build to resolve install failures."
+  },
+  {
+    "id": "py_requests",
+    "categoryId": "python_tools",
+    "name": "Requests Library",
+    "command": "pip install requests",
+    "description": "The standard Python library used to interactively trigger HTTP networks, APIs, head headers, and read raw request bodies."
+  },
+  {
+    "id": "py_soup",
+    "categoryId": "python_tools",
+    "name": "BeautifulSoup Parsing",
+    "command": "pip install beautifulsoup4",
+    "description": "A framework to parse and explore XML and HTML files, enabling easy web scraping data processing."
+  },
+  {
+    "id": "py_numpy",
+    "categoryId": "python_tools",
+    "name": "NumPy Toolkit",
+    "command": "pip install numpy",
+    "description": "Essential Python multi-dimensional array processing utility containing scientific math matrices operations."
+  },
+  {
+    "id": "py_pandas",
+    "categoryId": "python_tools",
+    "name": "Pandas Framework",
+    "command": "pip install pandas",
+    "description": "Data exploration database structure toolkit supplying powerful data frames and analytical structures."
+  },
+  {
+    "id": "py_flask",
+    "categoryId": "python_tools",
+    "name": "Flask App Framework",
+    "command": "pip install flask",
+    "description": "Lightweight WSGI Python micro-architecture used to spin up swift local web servers and API endpoints easily."
+  },
+  {
+    "id": "py_rich",
+    "categoryId": "python_tools",
+    "name": "Rich Formatting",
+    "command": "pip install rich",
+    "description": "Renders beautiful colorful text, visual tables, loading bars, styled boxes, and custom formatting inside CLI outputs."
+  },
+  {
+    "id": "py_typer",
+    "categoryId": "python_tools",
+    "name": "Typer CLI Builder",
+    "command": "pip install typer",
+    "description": "A premium library for building awesome CLI apps using Python 3 type hinting. Simplifies terminal argument queries."
+  },
+  {
+    "id": "termux_packages_repo",
+    "categoryId": "github_repositories",
+    "name": "Official Termux Packages",
+    "command": "git clone https://github.com/termux/termux-packages.git",
+    "repository": "https://github.com/termux/termux-packages",
+    "description": "The central repository containing compiler receipts for building and packaging apps for the official Termux software suite.",
+    "warning": "Always review source build scripts carefully before launching compilation tasks locally."
+  },
+  {
+    "id": "termux_app_repo",
+    "categoryId": "github_repositories",
+    "name": "Official Termux Core App",
+    "repository": "https://github.com/termux/termux-app",
+    "command": null,
+    "description": "The central source repository of the main Terminal emulator application for Android, containing Java frameworks and terminal screen drawers.",
+    "warning": "Ensure you verify digital APK signatures of experimental builds before installing."
+  },
+  {
+    "id": "termux_api_repo",
+    "categoryId": "github_repositories",
+    "name": "Termux Core API Services",
+    "repository": "https://github.com/termux/termux-api",
+    "command": "git clone https://github.com/termux/termux-api.git",
+    "description": "Exposes core Android functionality (Camera, Speech, Vibrator, Contacts, Battery) to standard bash scripts. Needs companion Termux:API Play/F-Droid app.",
+    "warning": "Ensure custom fork repositories correspond to trusted authors."
+  },
+  {
+    "id": "proot_distro",
+    "categoryId": "github_repositories",
+    "name": "PRoot Linux Distros Installer",
+    "repository": "https://github.com/termux/proot-distro",
+    "command": "pkg install proot-distro -y",
+    "description": "Manages installation of standard rootless Linux environments (Ubuntu, Debian, Fedora, Arch) on top of the Termux emulator.",
+    "warning": "Requires standard network bandwidth to download third-party image containers."
+  },
+  {
+    "id": "termux_x11_repo",
+    "categoryId": "github_repositories",
+    "name": "Termux Graphic X11 App",
+    "repository": "https://github.com/termux/termux-x11",
+    "command": null,
+    "description": "High-performance graphic processing server environment displaying desktop windows at accelerated speeds on modern devices.",
+    "warning": "Needs manual client setup and terminal server commands to visual start."
+  },
+  {
+    "id": "my_termux_setup_repo",
+    "categoryId": "github_repositories",
+    "name": "Premium Termux Customizer",
+    "repository": "https://github.com/mskian/my-termux-setup",
+    "command": "git clone https://github.com/mskian/my-termux-setup.git",
+    "description": "A popular customized environment shell config incorporating Zsh, custom font pairings, themes, and styled greetings.",
+    "warning": "Review external installation scripts before letting them overwrite your local Zsh rc files."
+  },
+  {
+    "id": "netcat",
+    "categoryId": "networking_tools",
+    "name": "Netcat OpenBSD Utility",
+    "command": "pkg install netcat-openbsd -y",
+    "description": "An open source, robust utility to read, write, check ports, bind backdoors, and route arbitrary network datagrams over TCP/UDP.",
+    "warning": "Only use on systems and networks you own or have permission to test."
+  },
+  {
+    "id": "whois",
+    "categoryId": "networking_tools",
+    "name": "WHOIS Registrar Finder",
+    "command": "pkg install whois -y",
+    "description": "Directly queries WHOIS databases to inspect registrar registry records, registration timelines, and public host names.",
+    "warning": "Ensure searches remain compliant with registrar querying rate limits."
+  },
+  {
+    "id": "dnsutils",
+    "categoryId": "networking_tools",
+    "name": "DNS utilities (Dig, nslookup)",
+    "command": "pkg install dnsutils -y",
+    "description": "Installs advanced domain name system lookup binaries (dig, host, nslookup) used to audit A, MX, TXT, and CNAME records.",
+    "warning": "Be professional and audit networks lawfully."
+  },
+  {
+    "id": "traceroute",
+    "categoryId": "networking_tools",
+    "name": "Traceroute Route Auditor",
+    "command": "pkg install traceroute -y",
+    "description": "Traces and measures diagnostic network hop delay durations across servers to analyze internet routing pathways.",
+    "warning": "Fails on network routing structures filtering diagnostic ping requests."
+  },
+  {
+    "id": "tcpdump",
+    "categoryId": "networking_tools",
+    "name": "Tcpdump Sniffing Utility",
+    "command": "pkg install tcpdump -y",
+    "description": "A high-efficacy raw packet capturing pipeline tool enabling active networking inspection directly within console output.",
+    "warning": "Requires administrative root configurations on raw Android devices to sniff hardware interfaces."
+  },
+  {
+    "id": "nmap",
+    "categoryId": "networking_tools",
+    "name": "Nmap Vulnerability Mapper",
+    "command": "pkg install nmap -y",
+    "description": "An industry-expert remote vulnerability auditor. Safely scans servers, lists open ports, operating software banners, and os types.",
+    "warning": "Unauthorized querying of remote network servers is strictly forbidden."
+  },
+  {
+    "id": "osint_py_git",
+    "categoryId": "osint_learning",
+    "name": "Terminal OSINT Pre-requisites",
+    "command": "pkg install python git -y",
+    "description": "Installs the primary package foundations (Git client + Python 3 runtime) necessary to explore open source forensic intelligence tools."
+  },
+  {
+    "id": "osint_parsers",
+    "categoryId": "osint_learning",
+    "name": "Format Parsers (Curl, Jq, Wget)",
+    "command": "pkg install jq curl wget -y",
+    "description": "Provides data ingestion layers allowing command line download of public API fields and parsing nested JSON databases."
+  },
+  {
+    "id": "info_gathering_chain",
+    "categoryId": "info_gathering",
+    "name": "Diagnostics Suite Installer",
+    "command": "pkg install curl wget jq whois dnsutils -y",
+    "description": "Installs a complete, diagnostic information aggregation utility package containing curl, wget, jq, whois, and dig.",
+    "warning": "Always respect the guidelines and targets set by authorized learning labs."
+  },
+  {
+    "id": "web_security_chain",
+    "categoryId": "web_security",
+    "name": "Security Labs Base packages",
+    "command": "pkg install python git curl openssh -y",
+    "description": "Installs python, git client, curl network utility, and standard OpenSSH dependencies supporting educational secure protocol learning.",
+    "warning": "Testing on remote targets is strictly prohibited. Authorized configurations/environments only."
+  },
+  {
+    "id": "moon_buggy",
+    "categoryId": "fun_games",
+    "name": "Moon Buggy Retro Game",
+    "command": "pkg install moon-buggy -y",
+    "description": "Hop over lunar crevices inside this classic arcade ASCII side scroller directly in your console window.",
+    "howToPlay": "Trigger 'moon-buggy' in terminal. Press SPACEBAR to hop."
+  },
+  {
+    "id": "nsnake",
+    "categoryId": "fun_games",
+    "name": "NSnake Terminal Snake",
+    "command": "pkg install nsnake -y",
+    "description": "Immersive cursor-driven Snake game inside standard console grids incorporating custom levels and speeds.",
+    "howToPlay": "Trigger 'nsnake' inside shell. Control the snake with directional arrow keys."
+  },
+  {
+    "id": "cmatrix",
+    "categoryId": "fun_games",
+    "name": "CMatrix Falling Text",
+    "command": "pkg install cmatrix -y",
+    "description": "Transform your console screen into the classic falling green matrix. Extremely popular and highly satisfying.",
+    "howToPlay": "Trigger 'cmatrix' in dashboard. Exit with CTRL+C."
+  },
+  {
+    "id": "check_python",
+    "categoryId": "troubleshooting",
+    "name": "Check Python Interpreter Version",
+    "command": "python --version",
+    "description": "Triggers python interpreter diagnostics. Assures it is loaded and correctly compiled."
+  },
+  {
+    "id": "check_git",
+    "categoryId": "troubleshooting",
+    "name": "Check Git Client Version",
+    "command": "git --version",
+    "description": "Outputs current Git version and helps verify the git repository suite is working."
+  },
+  {
+    "id": "check_node",
+    "categoryId": "troubleshooting",
+    "name": "Check Node Engine Version",
+    "command": "node --version",
+    "description": "Queries node compiler version to log node installation path diagnostics."
+  }
+]
